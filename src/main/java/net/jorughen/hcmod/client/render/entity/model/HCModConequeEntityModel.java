@@ -20,19 +20,7 @@ public class HCModConequeEntityModel extends Model {
         this.root = root;
     }
 
-    public static TexturedModelData getTexturedModelData() {
-        ModelData modelData = new ModelData();
-        ModelPartData modelPartData = modelData.getRoot();
-        ModelPartData modelPartData2 = modelPartData.addChild("pole", ModelPartBuilder.create().uv(7, 5).cuboid(-9.0F, -24.5F, 7.0F, 2.0F, 2.0F, 2.0F), ModelTransform.NONE);
-        modelPartData2.addChild("base", ModelPartBuilder.create().uv(0, 10).cuboid(-8.5F, -27.0F, 6.5F, 1.0F, 1.0F, 1.0F), ModelTransform.NONE);
-        modelPartData2.addChild("left_spike", ModelPartBuilder.create().uv(11, 11).cuboid(-8.5F, -24.0F, 10.5F, 1.0F, 1.0F, 1.0F), ModelTransform.NONE);
-        modelPartData2.addChild("middle_spike", ModelPartBuilder.create().uv(9, 0).cuboid(-8.5F, -25.0F, 9.5F, 1.0F, 3.0F, 1.0F), ModelTransform.NONE);
-        modelPartData2.addChild("right_spike", ModelPartBuilder.create().uv(3, 4).mirrored().cuboid(-8.5F, -26.0F, 5.5F, 1.0F, 4.0F, 1.0F), ModelTransform.NONE);
-        modelPartData2.addChild("right_spike2", ModelPartBuilder.create().uv(0, 8).mirrored().cuboid(-8.5F, -22.0F, 6.5F, 1.0F, 1.0F, 3.0F), ModelTransform.NONE);
-        return TexturedModelData.of(modelData, 32, 32);
-    }
-
-    public static TexturedModelData getAtlanTexturedModelData() {
+    public static TexturedModelData getConequeTexturedModelData() {
         ModelData modelData = new ModelData();
         ModelPartData modelPartData = modelData.getRoot();
         ModelPartData modelPartData2 = modelPartData.addChild("pole", ModelPartBuilder.create().uv(7, 5).cuboid(-1.0F, -16.5F, 1.0F, 2.0F, 2.0F, 2.0F), ModelTransform.NONE);

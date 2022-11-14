@@ -25,7 +25,7 @@ public class HClientMod implements ClientModInitializer{
 
     @Override
     public void onInitializeClient() {
-        EntityModelLayerRegistry.registerModelLayer(Coneque_Staff, HCModConequeEntityModel::getAtlanTexturedModelData);
+        EntityModelLayerRegistry.registerModelLayer(Coneque_Staff, HCModConequeEntityModel::getConequeTexturedModelData);
 
 
         coneque_staff item = (coneque_staff) ModItems.Coneque_Staff;
